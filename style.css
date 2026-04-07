@@ -301,3 +301,191 @@ body {
   50% { transform: translateX(-1%); }
   100% { transform: translateX(1%); }
 }
+
+/* QILICH */
+.sword {
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px red, 0 0 20px red;
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  color: #00ffcc;
+}
+
+/* QILICH */
+.sword {
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px red, 0 0 20px red;
+}
+.top-access {
+  position: fixed;
+  top: 30px;
+  left: 40px;
+
+  font-family: "Orbitron", sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+
+  color: #00ffcc;
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 5px #00ffcc,
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc;
+
+  opacity: 0.9;
+}
+.logo {
+  transform: skewX(-10deg);
+}
+.logo:hover {
+  transform: skewX(-12deg) scale(1.05);
+}
+#hack-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* flash effect */
+.flash {
+  animation: flash 0.15s ease;
+}
+
+@keyframes flash {
+  0% { opacity: 0; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0; }
+}
+
+/* glitch lines */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.05) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  animation: glitchLines 0.2s infinite;
+}
+
+@keyframes glitchLines {
+  from { transform: translateY(0); }
+  to { transform: translateY(5px); }
+}
+.skills {
+  font-family: "Share Tech Mono", monospace;
+  color: #00ff88;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #00ff88;
+}.intro-panel {
+  position: relative;
+  background: url("glitch.gif") center/cover no-repeat;
+}
+.intro-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.intro-content {
+  position: relative;
+  z-index: 2;
+}
+.intro-content h1 {
+  animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.contact-panel {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Sarlavha */
+.section-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: #00ff88;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* Contact box */
+.contact-box {
+  display: inline-block;
+  padding: 25px 40px;
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+  border-radius: 10px;
+}
+
+/* Har bir qator */
+.contact-box p {
+  margin: 12px 0;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #eafff7;
+}
+
+/* Linklar */
+.contact-box a {
+  color: #00ff88;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.contact-box a:hover {
+  color: #ff0033;
+  text-shadow: 0 0 8px #ff0033;
+  transform: scale(1.05);
+}
+
+/* Status (agar qo‘shsang) */
+.status {
+  color: #00ff88;
+  margin-bottom: 15px;
+  font-family: "Share Tech Mono", monospace;
+  text-shadow: 0 0 8px #00ff88;
+}
