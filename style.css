@@ -325,20 +325,6 @@ body {
   }
 }
 
-@keyframes slow-zoom {
-<<<<<<< HEAD
-  from {s
-=======
-  from {
->>>>>>> da45062 (update)
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.08);
-  }
-}
-
 @keyframes fade-glitch {
 
   0%,
