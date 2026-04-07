@@ -71,3 +71,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   revealOnScroll();
 });
+const text = document.querySelector('.final-text');
+
+setInterval(() => {
+  if (Math.random() > 0.6) {
+    text.style.textShadow = `
+      2px 0 red,
+      -2px 0 blue
+    `;
+  } else {
+    text.style.textShadow = "none";
+  }
+}, 120);
