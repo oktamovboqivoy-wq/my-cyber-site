@@ -326,7 +326,11 @@ body {
 }
 
 @keyframes slow-zoom {
+<<<<<<< HEAD
   from {s
+=======
+  from {
+>>>>>>> da45062 (update)
     transform: scale(1);
   }
 
